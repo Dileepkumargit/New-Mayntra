@@ -1,0 +1,38 @@
+@tag
+Feature: Myntra Testing
+
+  Background: Login the myntra wesite [90m# C:/Users/abc/eclipse-workspace/Myntra/src/test/java/Cucumber/Myntra/Myntra.feature:5[0m
+    [32mGiven [0m[32mGo to The myntra website[0m    [90m# Myntra.go_to_the_myntra_website()[0m
+
+  #And Click on the login
+  #When Enter the Login Credentials
+  #And Click on the Login button
+  Scenario: checking the results        [90m# C:/Users/abc/eclipse-workspace/Myntra/src/test/java/Cucumber/Myntra/Myntra.feature:11[0m
+    [31mGiven [0m[31msearch for the iteam "[0m[31m[1mshirts[0m[31m"[0m [90m# Myntra.search_for_the_iteam_something(String)[0m
+      [31morg.openqa.selenium.WebDriverException: chrome not reachable
+        (Session info: chrome=97.0.4692.99)
+      Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+      System info: host: 'DESKTOP-VA7NTH0', ip: '192.168.4.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\abc\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: 9cc68f76167770a11d0abd2e633324df
+      *** Element info: {Using=xpath, value=//div[@class='desktop-query']//input}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+      	at POM.Homepage.searchForShirts(Homepage.java:24)
+      	at StepDefination.Myntra.search_for_the_iteam_something(Myntra.java:39)
+      	at ✽.Given search for the iteam "shirts"(C:/Users/abc/eclipse-workspace/Myntra/src/test/java/Cucumber/Myntra/Myntra.feature:12)
+      [0m
+    [36mAnd [0m[36mselect any random iteam[0m         [90m# Myntra.select_any_random_iteam()[0m
